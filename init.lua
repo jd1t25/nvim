@@ -1,4 +1,5 @@
-require('core.options')
-require('core.keymaps')
-require('core')
+require("core.options")
+require("core.mapleader")
+require("core")
+require("core.keymaps")
 --require('plugins')
