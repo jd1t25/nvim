@@ -1,11 +1,12 @@
 return { 
   "nyoom-engineering/oxocarbon.nvim",
-  priority = 1000,
-  config = function()
-	  vim.cmd([[colorscheme oxocarbon]])
-  end,
-  -- Add in any other configuration; 
-  --   event = foo, 
-  --   config = bar
-  --   end,
+   lazy = false, -- make sure we load this during startup if it is your main colorscheme
+    priority = 1000, -- make sure to load this before all the other start plugins
+    config = function()
+      -- Load the colorscheme here
+      vim.opt.background = "dark"
+      vim.cmd.colorscheme 'oxocarbon'
+      -- You can configure highlights by doing something like
+      --vim.cmd.hi 'Comment gui=none'
+    end,
 } 
