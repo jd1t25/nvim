@@ -37,10 +37,10 @@ local options = {
 	wrap = false, -- display lines as one long line
 	scrolloff = 8, -- is one of my fav
 	sidescrolloff = 8,
-
 	-- loaded_netrw = 1, -- disable netrw at the very start
 	-- loaded_netrwPlugin = 1,
-	--  guifont = "Cascadia Code:h12.0",               -- the font used in graphical neovim applications
+	-- nvim_tree_respect_buf_cwd = 1,
+	-- guifont = "Cascadia Code:h12.0",               -- the font used in graphical neovim applications
 }
 
 vim.opt.shortmess:append("c")
